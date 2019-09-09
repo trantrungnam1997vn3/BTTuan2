@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số a: "/>
+            <EditText
+                android:id="@+id/inputA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số b: "/>
+            <EditText
+                android:id="@+id/inputB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnTong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TinhTong"
+            android:text="Tổng 2 số"/>
+        <Button
+            android:id="@+id/btnHieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TinhHieu"
+            android:text="Hiệu 2 số"/>
+        <Button
+            android:id="@+id/btnTich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TinhTich"
+            android:text="Tích 2 số"/>
+        <Button
+            android:id="@+id/btnThuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TinhThuong"
+            android:text="Thương 2 số"/>
+        <Button
+            android:id="@+id/btnUSCLN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TinhUSCLN"
+            android:text="Ước số chung lơn nhất"/>
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Thoat"
+            android:text="Thoát chương trình"/>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
